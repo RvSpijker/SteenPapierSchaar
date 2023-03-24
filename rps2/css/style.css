@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    border: 5px solid black;
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: 30px;
+    margin-top: 200px;
+}
+
+.nobox {
+    border: 5px solid rgb(255, 255, 255);
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: 30px;
+    margin-top: 200px;
+}
+
+.widebox {
+    border: 5px solid rgb(0, 0, 0);
+    height: 300px;
+    width: 670px;
+    float: left;
+    margin: 30px;
+    margin-top: 200px;
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+i {
+    font-size: 200px;
+    padding: 50px 60px;
+}
+
+.playagain {
+    border-radius: 25px;
+    border: 5px solid rgb(0, 0, 0);
+    position: absolute;
+    bottom: 100px;
+    width: 10%;
+    text-align: center;
+    margin: auto 43%;
+    padding: 10px;
+}
+
+#wins {
+    position: relative;
+    top: 5%;
+    
+}
+
+#lose {
+    position: relative;
+    top: 8%;
+    
+}
+
+#draw {
+    position: relative;
+    top: 11%;
+    
+}
+
+#reset {
+    position: relative;
+    top: 14%;
+    
+}
+
+.scorebox {
+    margin-top: 20px;
+    position: absolute;
+    left: 90%;
+    border: 5px solid rgb(0, 0, 0);
+    height: 130;
+    width: 110px;
+}
