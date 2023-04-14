@@ -1,4 +1,4 @@
-if (localStorage.wincount = undefined) {
+if (localStorage.wincount == undefined) {
     localStorage.wincount = 0;
     localStorage.losecount = 0;
     localStorage.drawcount = 0;
