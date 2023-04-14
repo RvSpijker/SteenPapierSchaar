@@ -10,36 +10,42 @@ document.getElementById("lose").innerHTML = "Loses: " + localStorage.losecount
 document.getElementById("draw").innerHTML = "Draws: " + localStorage.drawcount
 console.log(localStorage.wincount, localStorage.losecount, localStorage.drawcount)
 
-//er voor zorgen dat je steen papier of schaar kan droppen
+
 function allowDrop(ev) {
 ev.preventDefault();
 }
 
-//wanner je steen sleept:
+
+//Steen
 function dragr(ev) {
-ev.dataTransfer.setData("text", ev.target.id); //er voor zorgen dat je steen kan slepen
+ev.dataTransfer.setData("text", ev.target.id);
+
 //in de console laten zien wat er gekozen is
 localStorage.choise = "steen" 
-console.log(localStorag.choise)
+console.log(localStorage.choise)
 }
 
-//wanner je papier sleept:
+
+//Papier
 function dragp(ev) {
-ev.dataTransfer.setData("text", ev.target.id); //er voor zorgen dat je papier kan slepen
+ev.dataTransfer.setData("text", ev.target.id);
+
 //in de console laten zien wat er gekozen is
 localStorage.choise = "papier" 
 console.log(localStorage.choise)
 }
 
-//wanner je schaar sleept:
+
+//Schaar
 function drags(ev) {
-ev.dataTransfer.setData("text", ev.target.id); //er voor zorgen dat je schaar kan slepen
+ev.dataTransfer.setData("text", ev.target.id);
+
 //in de console laten zien wat er gekozen is
 localStorage.choise = "schaar" 
 console.log(localStorage.choise)
 }
 
-// wanner je steen papier of schaar los laat op het vakje:
+
 function drop(ev) {
 ev.preventDefault();
 var data = ev.dataTransfer.getData("text");
