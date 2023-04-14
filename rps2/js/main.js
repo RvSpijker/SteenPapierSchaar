@@ -1,7 +1,7 @@
 if (localStorage.wincount == undefined) {
-localStorage.wincount = 0;
-localStorage.losecount = 0;
-localStorage.drawcount = 0;
+    localStorage.wincount = 0;
+    localStorage.losecount = 0;
+    localStorage.drawcount = 0;
 }
 
 //de win lose en draw count laten zien

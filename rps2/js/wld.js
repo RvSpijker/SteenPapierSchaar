@@ -1,3 +1,9 @@
+if (localStorage.wincount = undefined) {
+    localStorage.wincount = 0;
+    localStorage.losecount = 0;
+    localStorage.drawcount = 0;
+}
+
 document.getElementById("wins").innerHTML = "Wins: " + localStorage.wincount
 document.getElementById("lose").innerHTML = "Loses: " + localStorage.losecount
 document.getElementById("draw").innerHTML = "Draws: " + localStorage.drawcount
